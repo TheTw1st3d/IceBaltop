@@ -1,0 +1,28 @@
+name: IceSteal
+version: '1.0-SNAPSHOT'
+main: dev.twisted.iceSteal.IceSteal
+api-version: '1.21'
+commands:
+  permissions:
+    enderchest.use:
+      default: true
+      
+  baltop:
+    description: Baltop
+    aliases:
+      - baltop
+
+  baltop-reload:
+    description: Reload the plugin's configuration.
+    usage: /<command>
+    permission: raibaltop.reload
+    permission-message: You don't have permission to use this command.
+
+permissions:
+  baltop.use:
+    description: Default permission
+
+  baltop.reload:
+    description: Allows access to reload the plugin's configuration.
+    default: op
+
